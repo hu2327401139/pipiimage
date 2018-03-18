@@ -10,7 +10,9 @@
             margin: 0;
             padding: 0;
         }
-
+body{
+    min-width: 900px;
+}
 
         li{
             list-style: none;
@@ -152,12 +154,29 @@
 
 
         .img-info{
-            display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
         }
         .img-info .img{
+            flex-grow: 1;
             position: relative;
             display: inline-block;
+            margin: 8px;
         }
+
+        .img-info::after{
+            content: '';
+            flex-grow: 999999;
+        }
+
+        .img-info .img img{
+            height: 200px;
+            max-width: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+
 
         .img-info .img .img-author{
             display: none;
@@ -254,113 +273,102 @@
                 <div id="hot">
                     <div class="img-info">
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/1.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/2.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/3.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/1.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="img-info">
-                        <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/2.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/3.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/4.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/3.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="img-info">
-                        <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/4.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/5.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/6.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/4.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                         <a href="#" class="img">
-                            <img src="images/test.jpg" alt="" width="343.391px" height="228.922px">
-                        <span class="img-author">
-                            <i></i>
-                            <span>宿小强</span>
-                        </span>
+                            <img src="images/test/5.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
+                        </a>
+                        <a href="#" class="img">
+                            <img src="images/test/6.jpg" alt="">
+                            <span class="img-author">
+                                <i></i>
+                                <span>宿小强</span>
+                            </span>
                         </a>
                     </div>
                 </div>

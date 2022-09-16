@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="cn">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
     <style>
-
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-body{
-    min-width: 900px;
-}
 
-        li{
+        body {
+            min-width: 900px;
+        }
+
+        li {
             list-style: none;
             display: inline-block;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
 
-        #top{
+        #top {
             height: 620px;
             width: 100%;
-/*            background:url("images/timg.jpg") no-repeat;*/
+            /*            background:url("images/timg.jpg") no-repeat;*/
             background-color: rgba(85, 255, 59, 0.82);
         }
 
 
         /*搜索框*/
-        #search{
+        #search {
             margin: 0 auto;
             width: 620px;
             height: 54px;
 
         }
-        #search-father{
+
+        #search-father {
             border: 2px solid white;
             position: relative;
             border-radius: 100px;
 
         }
-        #search-father input{
+
+        #search-father input {
             height: 24px;
             width: 520px;
             line-height: 24px;
             margin: 13px 20px 13px 15px;
-            border:none;
+            border: none;
             outline: none;
-            background:none;
-            cursor:text;
-            color:white;
+            background: none;
+            cursor: text;
+            color: white;
         }
-        #search-submit{
-            background:url('images/search.png') no-repeat;
+
+        #search-submit {
+            background: url('images/search.png') no-repeat;
             width: 20px;
             height: 21px;
             display: inline-block;
@@ -66,8 +71,9 @@ body{
             cursor: pointer;
 
         }
-        #fen-ge-xian{
-            background-color: rgba(255,255,255,.3);
+
+        #fen-ge-xian {
+            background-color: rgba(255, 255, 255, .3);
             height: 24px;
             width: 2px;
             display: inline-block;
@@ -79,40 +85,44 @@ body{
 
 
         /*头部导航*/
-        #header-nav{
+        #header-nav {
             width: 100%;
             height: 32px;
-            background-color: rgba(0,0,0,0.2);
+            background-color: rgba(0, 0, 0, 0.2);
         }
 
-        #header-nav-father{
+        #header-nav-father {
             display: inline-block;
             height: 100%;
             float: right;
             line-height: 32px;
         }
+
         #header-nav-father ul li {
             margin-right: 20px;
         }
-        #header-nav-father ul li a{
+
+        #header-nav-father ul li a {
             color: white;
             font-size: 14px;
             font-weight: normal;
         }
 
         /*Logo设置*/
-        #center-father{
+        #center-father {
             position: relative;
-            top:25%;
+            top: 25%;
             height: 194px;
         }
-        #logo{
+
+        #logo {
             margin: 0 auto;
             width: 243px;
             height: 105px;
             margin-bottom: 35px;
         }
-        #logo a{
+
+        #logo a {
             display: inline-block;
             width: 100%;
             height: 100%;
@@ -120,27 +130,31 @@ body{
 
 
         /*下面内容*/
-        #img-list{
+        #img-list {
             width: 100%;
         }
-        #img-father{
+
+        #img-father {
             padding: 0 3%;
             height: 100%;
         }
 
         /*精美图片*/
-        #img-top{
+        #img-top {
             height: 33px;
             line-height: 33px;
             padding: 30px 0;
         }
-        #img-top>span{
+
+        #img-top>span {
             font-size: 22px;
         }
-        #use-img-type{
+
+        #use-img-type {
             display: inline-block;
             float: right;
         }
+
         #use-img-type a {
             text-align: center;
             display: inline-block;
@@ -153,23 +167,24 @@ body{
         }
 
 
-        .img-info{
+        .img-info {
             display: flex;
             flex-wrap: wrap;
         }
-        .img-info .img{
+
+        .img-info .img {
             flex-grow: 1;
             position: relative;
             display: inline-block;
-            margin: 8px;
+            /* margin: 8px; */
         }
 
-        .img-info::after{
+        .img-info::after {
             content: '';
             flex-grow: 999999;
         }
 
-        .img-info .img img{
+        .img-info .img img {
             height: 200px;
             max-width: 100%;
             min-width: 100%;
@@ -178,42 +193,45 @@ body{
         }
 
 
-        .img-info .img .img-author{
+        .img-info .img .img-author {
             display: none;
             height: 50px;
             position: absolute;
             bottom: 20px;
+            left: 0;
             width: 100%;
             line-height: 50px;
         }
-        .img-info .img .img-author i{
+
+        .img-info .img .img-author i {
             border: 1px solid cadetblue;
             display: inline-block;
             border-radius: 50%;
             background: url("images/test2.jpg");
-            height:48px;
-            width:48px;
+            height: 48px;
+            width: 48px;
             margin-left: 20px;
             margin-right: 15px;
         }
-        .img-info .img .img-author i+span{
+
+        .img-info .img .img-author i+span {
             position: relative;
-            top:-20px;
+            top: -20px;
             color: #fff;
         }
 
 
-        footer{
+        footer {
             position: relative;
             bottom: 0;
             height: 50px;
             text-align: center;
             line-height: 50px;
         }
-
     </style>
 
 </head>
+
 <body>
 
     <div id="top">
@@ -243,7 +261,7 @@ body{
             <!-- 搜索框 -->
             <div id="search">
                 <div id="search-father">
-                    <input type="text"/>
+                    <input type="text" />
 
                     <span id="fen-ge-xian"></span>
 
@@ -392,38 +410,42 @@ body{
 
 
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script>
+    <script>
 
-    $(document).ready(function(){
+        $(document).ready(function () {
+            
 
-        //鼠标悬浮到照片显示作者信息
-        $(".img").hover(function () {
-            $(this).children(".img-author").show();
-        },function () {
-            $(this).children(".img-author").hide();
-        })
+            //鼠标悬浮到照片显示作者信息
+            $(".img").hover(function () {
+                $(this).children(".img-author").show();
+                
 
-        //切换最热和最新
-        $("#use-img-type").children("a").click(function () {
+            }, function () {
+                $(this).children(".img-author").hide();
+            })
 
-            //显示对应的数据
-           if($(this).attr("href")=="#hot"){
-               $("#hot").show();
-               $("#new").hide();
-           }else{
-               $("#hot").hide();
-               $("#new").show();
-           }
+            //切换最热和最新
+            $("#use-img-type").children("a").click(function () {
 
-            //下划线
-            $(this).siblings("a").css("border-bottom","none");
-            $(this).css("border-bottom","2px solid black");
+                $("#hot").show();
+                $("#new").hide();
+
+                //显示对应的数据
+                 if ($(this).attr("href") == "#new") {
+                    $("#hot").hide();
+                    $("#new").show();
+                }
+
+                //下划线
+                $(this).siblings("a").css("border-bottom", "none");
+                $(this).css("border-bottom", "2px solid black");
+            });
+
         });
 
-    });
-
-</script>
+    </script>
 
 
 </body>
+
 </html>

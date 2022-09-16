@@ -24,11 +24,17 @@
             text-decoration: none;
         }
 
-        .yy{
-
-            box-shadow: 5px 5px 15px #888888;
-transition: all 0.2s;
-
+        .yy {
+            /* box-shadow: 5px 5px 15px #888888; */
+            /* box-shadow: 10px -10px 10px 6px rgb(0 0 0 / 32%); */
+            box-shadow: -10px 10px 10px 6px rgb(0 0 0 / 32%);
+            border-radius: 20px;
+            top: -10px;
+            left: 5px;
+            z-index: 999;
+            /* margin-top: -10px;
+            margin-left: 5px; */
+            transition: all 0.2s;
         }
 
         #top {
@@ -420,15 +426,20 @@ transition: all 0.2s;
     <script>
 
         $(document).ready(function () {
-            
+
 
             //鼠标悬浮到照片显示作者信息
             $(".img").hover(function () {
                 $(this).children(".img-author").show();
-                
+                // $(this).children("img").addClass('yy');
+                $(this).addClass('yy');
+                // $(this).children('img').css('border-radius','20px');
 
             }, function () {
                 $(this).children(".img-author").hide();
+                // $(this).children("img").removeClass('yy');
+                $(this).removeClass('yy');
+                // $(this).children('img').css('border-radius', '0');
             })
 
             //切换最热和最新
@@ -438,7 +449,7 @@ transition: all 0.2s;
                 $("#new").hide();
 
                 //显示对应的数据
-                 if ($(this).attr("href") == "#new") {
+                if ($(this).attr("href") == "#new") {
                     $("#hot").hide();
                     $("#new").show();
                 }
